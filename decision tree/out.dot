@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="outlook=overcast <= 0.5\ngini = 0.459\nsamples = 14\nvalue = [5, 9]"] ;
+1 [label="humidity=high <= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="windy <= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]"] ;
+2 -> 3 ;
+4 [label="outlook=rainy <= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]"] ;
+4 -> 6 ;
+7 [label="outlook=rainy <= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]"] ;
+1 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]"] ;
+7 -> 8 ;
+9 [label="windy <= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
